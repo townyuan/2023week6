@@ -1,4 +1,5 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: map-get($grays, "800");
+  color: $white;
+  font-size: 32px;
 }
