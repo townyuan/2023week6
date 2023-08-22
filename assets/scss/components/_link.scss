@@ -1,0 +1,39 @@
+.link-primary{
+  &:hover{
+    color: #9C9E18 !important;
+  }
+}
+
+.link-social{
+
+  img{
+    width: 23px;
+    height: 24px;
+  }
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.link-sale{
+  color: $black;
+  position: relative;
+
+  &:hover{
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -10px;
+      right: 0;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background-color: $secondary;
+      z-index: -1;
+    }
+  }
+}
+

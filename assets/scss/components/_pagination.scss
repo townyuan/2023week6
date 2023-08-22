@@ -1,0 +1,16 @@
+.pagination{
+  .page-link{
+    font-family: 'Yeseva One';
+    border: 1px solid $primary;
+    background-color: transparent;
+
+    &:hover{
+      background-color: $dark;
+      color: $secondary;
+    }
+
+    i{
+      margin: 8px -2px;
+    }
+  }
+}

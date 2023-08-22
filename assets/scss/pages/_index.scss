@@ -1,7 +1,97 @@
 /* index */
 
-.test{
-  width: 300px;
+.header{
+  &-banner{
+    background-image: url(/assets/images/event/13.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+
+    h3 {
+      letter-spacing: 3px;
+    }
+
+    @include media-breakpoint-up(md){
+      height: 518px;
+    }
+  }
+
+  &-cate{
+    border: 2px solid $dark;
+    padding: 22px 0;
+
+
+    @include media-breakpoint-up(md){
+      padding: 36px 0;
+    }
+
+    img{
+      width: 40px;
+      height: 40px;
+      margin-bottom: 8px;
+
+      @include media-breakpoint-up(md){
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+      }
+    }
+
+    p{
+      font-size: 16px;
+
+      &:hover{
+        color: $accent;
+      }
+
+      @include media-breakpoint-up(md){
+        font-size: 24px;
+      }
+    }
+
+    &:hover{
+      color: $accent;
+
+      img{
+        /*svg換色*/
+        filter: invert(84%) sepia(44%) saturate(7374%) hue-rotate(318deg) brightness(85%) contrast(81%);
+      }
+    }
+
+  }
+
+  &-cate-more{
+    border: 2px solid $dark;
+    padding: 28px 0;
+
+    @include media-breakpoint-up(md){
+      padding: 40px 0;
+    }
+
+    p{
+      font-size: 24px;
+
+      @include media-breakpoint-up(md){
+        font-size: 48px;
+      }
+    }
+  }
 }
 
 
+
+.recent{
+
+  &-img{
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+  }
+
+  &-summary{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}

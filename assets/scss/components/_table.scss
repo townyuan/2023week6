@@ -1,0 +1,9 @@
+.ticket-table{
+  thead{
+    border-bottom: 2px solid $primary;
+  }
+
+  th, td{
+    vertical-align: middle;
+  }
+}

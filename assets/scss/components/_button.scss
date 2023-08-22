@@ -1,0 +1,8 @@
+.btn-primary:hover{
+  color: $secondary;
+}
+
+button.btn-primary:disabled{
+  background-color: #9A9A9A;
+  border-color: #9A9A9A;
+}
