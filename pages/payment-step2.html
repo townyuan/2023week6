@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款︱主線任務六：售票網站</title>
+    <%- include('./layout/meta'); -%>
+  </head>
+  <body>
+    <%- include('./layout/nav'); -%>
+
+    <div class="container mt-24 mb-24 mt-md-60 mb-md-48">
+      <div class="row mb-60">
+        <div class="col-md-6 mx-auto">
+          <ol class="payment-list d-flex justify-content-between list-unstyled position-relative">
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number payment-number-active d-flex justify-content-center align-items-center mb-4"><i class="icofont icofont-verification-check text-secondary"></i></p>
+              <p class="noto-tc-serif fw-bold mb-0">訂單確認</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number payment-number-active d-flex justify-content-center align-items-center mb-4">2</p>
+              <p class="noto-tc-serif fw-bold mb-0">結帳付款</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number d-flex justify-content-center align-items-center mb-4">3</p>
+              <p class="noto-tc-serif fw-bold mb-0">訂單結果</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-32 mb-md-48 text-md-center">
+      <h2 class="noto-tc-serif fs-32 fs-md-48 fw-bold mb-24 mb-md-32">返老還童-制服聯誼</h2>
+      <p class="bg-dark p-8 py-md-12 mb-24 mb-md-32 text-secondary d-inline-block text-center">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <table class="table noto-tc-serif fw-bold">
+            <tbody class="border-2 border-top border-primary">
+              <tr class="border-1 border-bottom border-primary">
+                <th scope="col" class="text-start">訂單編號</th>
+                <td class="text-end">892746123</td>
+              </tr>
+              <tr class="border-1 border-bottom border-primary">
+                <th scope="col" class="text-start">票券</th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-48 mb-md-60">
+      <form action="" class="">
+        <div class="text-center">
+          <img src="/assets/images/sparkler.png" alt="sparkler" style="width: 32px; height: 32px;" class="mb-16">
+          <h3 class="noto-tc-serif fs-24 fw-bold">結帳資訊</h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 text-center">
+            <label for="userName" class="d-block mb-8 text-start w-100 w-md-25">取票資訊</label>
+            <input type="text" placeholder="請輸入身分證字號或護照號碼" class="fs-20 text-gray bg-transparent mb-0 w-100 px-16 py-8">
+            <p class="text-gray text-start mb-16">請輸入您的 <span class="text-acctnt">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-acctnt">護照號碼</span></p>
+            <ul class="text-start list-unstyled mb-24 mb-md-32">
+              <li class="my-4">付款方式</li>
+              <li class="my-4">
+                <input type="checkbox" class="form-check-input rounded-5 me-8" id="creditCard">
+                <label for="creditCard" class="form-check-label">信用卡</label>
+              </li>
+              <li class="my-4">
+                <input type="checkbox" class="form-check-input rounded-5 me-8" id="atmNumber">
+                <label for="atmNumber" class="form-check-label">ATM虛擬帳號</label>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary w-100 w-md-75 fs-18 fs-md-20 fw-bold py-16 py-md-8">確認訂單並繳費 $8000<i class="icofont-rounded-double-right fs-20 ms-4"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

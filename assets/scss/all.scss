@@ -1,5 +1,6 @@
 
 // base
+@import './base/reset';
 @import './base/font';
 @import './components/icofont/icofont.min.css';
 @import './components/icons';
@@ -8,18 +9,21 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 
-//vandors
 @import '../../node_modules/bootstrap/scss/bootstrap';
-// @import './vendors/swiper'
+
+//utils
+@import './utils/utils';
 
 //pages
-@import './layout/nav';
+@import './pages/nav';
 @import './pages/index';
+@import './pages/event';
+@import './pages/payment';
 
 
 //components
 @import './components/button';
-@import './components/form';
+@import './components/size';
 @import './components/icons';
 @import './components/link';
 @import './components/pagination';
@@ -29,3 +33,4 @@
 
 //vendors
 @import './vendors/swiper';
+@import '../../node_modules/aos/dist/aos.css';

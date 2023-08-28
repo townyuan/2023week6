@@ -1,18 +1,20 @@
 @import 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css';
 
-.swiper{
-  background-color: #000;
-}
 .swiper-wrapper {
   transition-timing-function: linear;
 }
 .swiper-slide {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-size: 32px;
+  font-family: 'Noto Serif TC';
+  padding: 16px 0;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 3.2px;
   width: auto;
-  color: #FBFF22;
-  background: #000;
+  color: $secondary;
+  background: $primary;
+
+  @include media-breakpoint-up(md){
+    padding: 24px 0;
+    font-size: 32px;
+  }
 }

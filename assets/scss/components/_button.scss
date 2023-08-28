@@ -1,8 +1,31 @@
-.btn-primary:hover{
-  color: $secondary;
+.btn-primary{
+  &:hover{
+    color: $secondary;
+  }
+  span:hover{
+    text-decoration: underline;
+  }
 }
 
 button.btn-primary:disabled{
   background-color: #9A9A9A;
   border-color: #9A9A9A;
+}
+
+.modal-btn{
+  background-color: $primary;
+  border: 0px;
+  color: $secondary;
+
+  &:hover{
+    color: $white;
+  }
+}
+
+.btn-close{
+  opacity:1;
+}
+
+.btn-wFixed{
+  min-width: 52px;
 }

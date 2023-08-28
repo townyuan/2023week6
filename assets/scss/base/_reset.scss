@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+.uneditable-input:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none;
+}

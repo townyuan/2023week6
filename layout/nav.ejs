@@ -1,29 +1,51 @@
-<nav class="navbar navbar-expand-lg navbar-light border-2 border-md-3 border-bottom border-dark mb-16 mb-md-32 py-26 py-md-24">
+<nav class="navbar navbar-expand-lg navbar-light border-2 border-md-3 border-bottom border-dark mb-16 mb-md-32 py-8 py-md-24 position-relative">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
       <h1><a class="logo me-24 me-md-16" href="index.html">7TAO 活動訂票網</a></h1>
-      <a class="navbar-brand d-flex align-items-center" href="index.html"><p class="fs-32 yeseva-one me-4">7TAO</p><span class="noto-tc-serif fs-16 fw-bold">活動訂票網</span></a>
-      <form class="d-none d-lg-flex search-box">
-        <input class="form-control me-2" type="search" placeholder="探索活動" aria-label="Search">
-        <button class="btn btn-primary" type="submit"><i class="icofont-search-1 fw-bold"></i></button>
+      <a class="navbar-brand d-none d-lg-flex align-items-center" href="index.html"><p class="fs-32 yeseva-one me-4">7TAO</p><span class="noto-tc-serif fs-16 fw-bold">活動訂票網</span></a>
+      <form class="d-flex search-box w-75">
+        <input class="form-control me-2 text-gray px-12 py-4 px-md-24 py-md-12" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="btn btn-sm btn-primary" type="submit"><i class="icofont-search-1 fw-bold fs-16 fs-md-18 px-md-12"></i></button>
       </form>
     </div>
     <ul class="list-unstyled d-md-flex d-none mb-0">
-      <li><a href="#" class="fs-18 yeseva-one link-primary me-md-24"><i class="icofont-ui-file fs-16 me-4"></i>REGISTER</a></li>
+      <li><a href="#" class="fs-18 yeseva-one link-primary me-md-24" data-bs-toggle="modal" data-bs-target="#forRegister"><i class="icofont-ui-file fs-16 me-4"></i>REGISTER</a></li>
       <li><a href="login.html" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-user fs-16 me-4"></i>LOGIN</a></li>
     </ul>
     <div class="hamburger d-md-none">
-      <a class="d-flex align-items-center px-12 py-4 border border-dark rounded h-100" data-bs-toggle="collapse" href="#login-7tao" role="button" aria-expanded="false" aria-controls="collapseExample">
-        <span class="material-symbols-outlined fs-24">menu</span>
+      <a class="d-flex align-items-center px-12 py-4 border border-1 border-dark rounded h-100" data-bs-toggle="collapse" href="#login-7tao" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <span class="material-symbols-outlined fs-32">menu</span>
       </a>
-    </div>
   </div>
 </nav>
 
+
+<!-- register modal -->
+<div class="modal fade" id="forRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-center rounded-0">
+      <div class="modal-header border-bottom border-3 border-dark d-flex justify-content-center">
+        <h4 class="modal-title fs-4 fw-bold mx-auto" id="exampleModalLabel">立刻成為7TAO會員</h4>
+        <button type="button" class="btn-close ms-0 text-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-48">
+        <p>
+          立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+          您也可以先報名活動，日後再註冊帳號，<br>
+          系統會在認證您的Email後，協助您找回舊的訂單。
+        </p>
+        <button type="button" class="btn btn-primary mt-24 px-32 py-8 modal-btn rounded-0 fs-20 fw-bold">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- login for mobile-->
-<div class="collapse" id="login-7tao">
-  <ul class="container list-unstyled border-bottom border-2 border-dark py-4">
+<div class="nav-collapse collapse w-100" id="login-7tao" style="background-color: #F3F1E5; z-index:100">
+  <ul class="container navbar-nav list-unstyled border-bottom border-2 border-dark py-12 px-12">
     <li class="mb-12"><a href="#" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-file fs-16 me-4"></i>REGISTER</a></li>
-    <li class="mb-12"><a href="login.html" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-user fs-16 me-4"></i>LOGIN</a></li>
+    <li class="mb-4"><a href="login.html" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-user fs-16 me-4"></i>LOGIN</a></li>
   </ul>
 </div>
+
