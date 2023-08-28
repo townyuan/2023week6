@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款︱主線任務六：售票網站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <script type="module" crossorigin src="/2023week6/assets/main-1101d3b3.js"></script>
+    <link rel="stylesheet" href="/2023week6/assets/main-8c1a4e3f.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light border-2 border-md-3 border-bottom border-dark mb-16 mb-md-32 py-8 py-md-24 position-relative">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <h1><a class="logo me-24 me-md-16" href="index.html">7TAO 活動訂票網</a></h1>
+      <a class="navbar-brand d-none d-lg-flex align-items-center" href="index.html"><p class="fs-32 yeseva-one me-4">7TAO</p><span class="noto-tc-serif fs-16 fw-bold">活動訂票網</span></a>
+      <form class="d-flex search-box w-75">
+        <input class="form-control me-2 text-gray px-12 py-4 px-md-24 py-md-12" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="btn btn-sm btn-primary" type="submit"><i class="icofont-search-1 fw-bold fs-16 fs-md-18 px-md-12"></i></button>
+      </form>
+    </div>
+    <ul class="list-unstyled d-md-flex d-none mb-0">
+      <li><a href="#" class="fs-18 yeseva-one link-primary me-md-24" data-bs-toggle="modal" data-bs-target="#forRegister"><i class="icofont-ui-file fs-16 me-4"></i>REGISTER</a></li>
+      <li><a href="login.html" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-user fs-16 me-4"></i>LOGIN</a></li>
+    </ul>
+    <div class="hamburger d-md-none">
+      <a class="d-flex align-items-center px-12 py-4 border border-1 border-dark rounded h-100" data-bs-toggle="collapse" href="#login-7tao" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <span class="material-symbols-outlined fs-32">menu</span>
+      </a>
+  </div>
+</nav>
+
+
+<!-- register modal -->
+<div class="modal fade" id="forRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-center rounded-0">
+      <div class="modal-header border-bottom border-3 border-dark d-flex justify-content-center">
+        <h4 class="modal-title fs-4 fw-bold mx-auto" id="exampleModalLabel">立刻成為7TAO會員</h4>
+        <button type="button" class="btn-close ms-0 text-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-48">
+        <p>
+          立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+          您也可以先報名活動，日後再註冊帳號，<br>
+          系統會在認證您的Email後，協助您找回舊的訂單。
+        </p>
+        <button type="button" class="btn btn-primary mt-24 px-32 py-8 modal-btn rounded-0 fs-20 fw-bold">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- login for mobile-->
+<div class="nav-collapse collapse w-100" id="login-7tao" style="background-color: #F3F1E5; z-index:100">
+  <ul class="container navbar-nav list-unstyled border-bottom border-2 border-dark py-12 px-12">
+    <li class="mb-12"><a href="#" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-file fs-16 me-4"></i>REGISTER</a></li>
+    <li class="mb-4"><a href="login.html" class="fs-18 yeseva-one link-primary"><i class="icofont-ui-user fs-16 me-4"></i>LOGIN</a></li>
+  </ul>
+</div>
+
+
+    <div class="container mt-24 mb-24 mt-md-60 mb-md-48">
+      <div class="row mb-60">
+        <div class="col-md-6 mx-auto">
+          <ol class="payment-list d-flex justify-content-between list-unstyled position-relative">
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number payment-number-active d-flex justify-content-center align-items-center mb-4"><i class="icofont icofont-verification-check text-secondary"></i></p>
+              <p class="noto-tc-serif fw-bold mb-0">訂單確認</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number payment-number-active d-flex justify-content-center align-items-center mb-4">2</p>
+              <p class="noto-tc-serif fw-bold mb-0">結帳付款</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p class="payment-number d-flex justify-content-center align-items-center mb-4">3</p>
+              <p class="noto-tc-serif fw-bold mb-0">訂單結果</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-32 mb-md-48 text-md-center">
+      <h2 class="noto-tc-serif fs-32 fs-md-48 fw-bold mb-24 mb-md-32">返老還童-制服聯誼</h2>
+      <p class="bg-dark p-8 py-md-12 mb-24 mb-md-32 text-secondary d-inline-block text-center">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <table class="table noto-tc-serif fw-bold">
+            <tbody class="border-2 border-top border-primary">
+              <tr class="border-1 border-bottom border-primary">
+                <th scope="col" class="text-start">訂單編號</th>
+                <td class="text-end">892746123</td>
+              </tr>
+              <tr class="border-1 border-bottom border-primary">
+                <th scope="col" class="text-start">票券</th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-48 mb-md-60">
+      <form action="" class="">
+        <div class="text-center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" style="width: 32px; height: 32px;" class="mb-16">
+          <h3 class="noto-tc-serif fs-24 fw-bold">結帳資訊</h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 text-center">
+            <label for="userName" class="d-block mb-8 text-start w-100 w-md-25">取票資訊</label>
+            <input type="text" placeholder="請輸入身分證字號或護照號碼" class="fs-20 text-gray bg-transparent mb-0 w-100 px-16 py-8">
+            <p class="text-gray text-start mb-16">請輸入您的 <span class="text-acctnt">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-acctnt">護照號碼</span></p>
+            <ul class="text-start list-unstyled mb-24 mb-md-32">
+              <li class="my-4">付款方式</li>
+              <li class="my-4">
+                <input type="checkbox" class="form-check-input rounded-5 me-8" id="creditCard">
+                <label for="creditCard" class="form-check-label">信用卡</label>
+              </li>
+              <li class="my-4">
+                <input type="checkbox" class="form-check-input rounded-5 me-8" id="atmNumber">
+                <label for="atmNumber" class="form-check-label">ATM虛擬帳號</label>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary w-100 w-md-75 fs-18 fs-md-20 fw-bold py-16 py-md-8">確認訂單並繳費 $8000<i class="icofont-rounded-double-right fs-20 ms-4"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer py-24 py-md-32 border-3 border-top border-primary">
+  <div class="container text-center fs-14 fs-md-16">
+    © 7TAO七逃. All Rights Reserved
+  </div>
+</footer>
+    
+  </body>
+</html>
